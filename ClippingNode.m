@@ -35,8 +35,8 @@
     region = CC_RECT_POINTS_TO_PIXELS(region);
     
     // respect scaling
-    clippingRegion = CGRectMake(region.origin.x * scaleX_, region.origin.y * scaleY_,
-                                region.size.width * scaleX_, region.size.height * scaleY_);
+    clippingRegion = CGRectMake(region.origin.x * _scaleX, region.origin.y * _scaleY,
+                                region.size.width * _scaleX, region.size.height * _scaleY);
 }
 
 -(void) setScale:(float)newScale {
